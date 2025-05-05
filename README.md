@@ -74,26 +74,22 @@ In the referenced documentation https://github.com/trys/postcss-utopia?tab=readm
 
 ```css
 :root {
-  @utopia spaceScale({
-    minWidth: 320,             /* Defaults to plugin minWidth */
-    maxWidth: 1240,            /* Defaults to plugin maxWidth */
-    minSize: 16,
-    maxSize: 18,
-    positiveSteps: [1.5, 2, 3],
-    negativeSteps: [0.75, 0.5],
-    customSizes: ['s-l'],
-    relativeTo: 'viewport',    /* Optional */
-    prefix: 'space',           /* Optional */
-    usePx: false,              /* Optional */
+  @utopia typeScale({
+    minWidth: 320,          /* Defaults to plugin minWidth */
+    maxWidth: 1240,         /* Defaults to plugin maxWidth */
+    minFontSize: 16,
+    maxFontSize: 18,
+    minTypeScale: 1.2,
+    maxTypeScale: 1.25,
+    positiveSteps: 5,
+    negativeSteps: 2,
+    relativeTo: 'viewport', /* Optional */
+    prefix: 'step'          /* Optional */
   });
 
   /* Generates
-  --space-2xs: clamp(...);
-  --space-xs: clamp(...); etc.
-
-  --space-2xs-xs: clamp(...); etc.
-
-  --space-s-l: clamp(...); etc.
+  --step--2: clamp(...);
+  --step--1: clamp(...); etc.
   */
 }
 ```
