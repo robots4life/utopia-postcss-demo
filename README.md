@@ -70,7 +70,7 @@ pnpm watch:css
 
 1.
 
-In the referenced documentation https://github.com/trys/postcss-utopia?tab=readme-ov-file#utopia-typescale the typescale has the object syntax.
+In the referenced documentation https://github.com/trys/postcss-utopia?tab=readme-ov-file#utopia-typescale the `typeScale` used the object syntax.
 
 ```css
 :root {
