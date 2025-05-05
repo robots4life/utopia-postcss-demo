@@ -1,0 +1,14 @@
+:root {
+  @utopia typeScale({
+    minWidth: 320,         
+    maxWidth: 1240,        
+    minFontSize: 14,
+    maxFontSize: 22,
+    minTypeScale: 1.2,
+    maxTypeScale: 1.25,
+    positiveSteps: 5,
+    negativeSteps: 2,
+    relativeTo: 'viewport', 
+    prefix: 'type-step'
+  });
+}
